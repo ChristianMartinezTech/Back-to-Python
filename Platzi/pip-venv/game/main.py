@@ -4,50 +4,50 @@
 import random
 
 def choose_options():
-  options = ('piedra', 'papel', 'tijera')
-  user_option = input('piedra, papel o tijera => ')
+  options = ('rock', 'paper', 'scissors')
+  user_option = input('rock, paper or scissors => ')
   user_option = user_option.lower()
 
   if not user_option in options:
-    print('esa opcion no es valida')
+    print('Invalid option')
     # continue
     return None, None
 
   computer_option = random.choice(options)
 
-  print('User option =>', user_option)
-  print('Computer option =>', computer_option)
+  print('User option:', user_option)
+  print('Computer option:', computer_option)
   return user_option, computer_option
 
 def check_rules(user_option, computer_option, user_wins, computer_wins):
   if user_option == computer_option:
-    print('Empate!')
-  elif user_option == 'piedra':
-    if computer_option == 'tijera':
-      print('piedra gana a tijera')
-      print('user gano!')
+    print('Tie!')
+  elif user_option == 'rock':
+    if computer_option == 'scissors':
+      print('Rock beats Scissors')
+      print('User won!')
       user_wins += 1
     else:
-      print('Papel gana a piedra')
-      print('computer gano!')
+      print('Paper beats Rock')
+      print('Computer won!')
       computer_wins += 1
-  elif user_option == 'papel':
-    if computer_option == 'piedra':
-      print('papel gana a piedra')
-      print('user gano')
+  elif user_option == 'paper':
+    if computer_option == 'rock':
+      print('Paper beats Rock')
+      print('User won!')
       user_wins += 1
     else:
-      print('tijera gana a papel')
-      print('computer gano!')
+      print('Scissors beats Paper')
+      print('Computer won!')
       computer_wins += 1
-  elif user_option == 'tijera':
-    if computer_option == 'papel':
-      print('tijera gana a papel')
-      print('user gano!')
+  elif user_option == 'scissors':
+    if computer_option == 'paper':
+      print('Scissors wins Paper')
+      print('User won!')
       user_wins += 1
     else:
-      print('piedra gana a tijera')
-      print('computer gano!')
+      print('Stone beats Scissors')
+      print('Computer won!')
       computer_wins += 1
   return user_wins, computer_wins
 
@@ -68,11 +68,11 @@ def run_game():
     user_wins, computer_wins = check_rules(user_option, computer_option, user_wins, computer_wins)
 
     if computer_wins == 2:
-      print('El ganador es la computadora')
+      print('Computer is the Winner!')
       break
 
     if user_wins == 2:
-      print('El ganador es el usuario')
+      print('User is the Winner!')
       break
 
 run_game()
