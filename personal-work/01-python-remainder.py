@@ -4,9 +4,9 @@
 
 def even_odd(number): 
     if number % 2 == 0:
-        return "even"
+        return "even :)"
     else:
-        return "odd"
+        return "odd :("
 
 
 if __name__ == "__main__":
