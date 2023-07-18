@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Python3 experimenting
-"""
+""" Python3 experimenting """
 
 
 # Variable declarations
@@ -35,7 +33,7 @@ print("List inside dictionary!!")
 print(f["Phrase"])
 print(f["Phrase"][0])
 print(f["Phrase"][2])
-print(f["Phrase"][-1]) # Great fucking job!
+print(f["Phrase"][-1])  # Great fucking job!
 print("#################")
 print()
 
@@ -60,18 +58,18 @@ print("#################")
 print()
 
 # If statement
-if (a + b) == 10: 
+if (a + b) == 10:
     print("Its ten")
 
-if (a + b) == 10.5: 
+if (a + b) == 10.5:
     print("Its ten point five")
 
-if (a + b) == 11: 
+if (a + b) == 11:
     print("Its eleven")
 
-if (a + b) == 11.5: 
+if (a + b) == 11.5:
     print("Its eleven point five")
-    
+
     # For loop
     for i in range(11):
         print(i)
@@ -85,5 +83,5 @@ if (a + b) == 11.5:
     print("#################")
     print()
 
-if (a + b) == 12: 
+if (a + b) == 12:
     print("Its twelve")

@@ -2,7 +2,7 @@
 """ Quick Python refresh before interview """
 
 
-def even_odd(number): 
+def even_odd(number):
     if number % 2 == 0:
         return "even :)"
     else:
