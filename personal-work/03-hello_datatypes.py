@@ -3,11 +3,11 @@
 
 
 # Variable declarations
-a = 5
-b = 6.5
-c = "Hello"
-d = "a"
-e = ["Hello", "What", "datatype", "is", "this"]
+a = 5  # Int
+b = 6.5  # Float
+c = "Hello"  # String
+d = "a"  # String
+e = ["Hello", "What", "datatype", "is", "this"]  # Array
 f = {
     "Name": "Chris",
     "Age": 26,
@@ -19,9 +19,9 @@ f = {
         "Rating": 8.5,
         "Phrase": ["Hello", "Honey", "Wasup"],
     },
-}
-g = (1, 2, "Hello")
-h = True
+}  # Dict
+g = (1, 2, "Hello")  # Tuple
+h = True  # Bool
 
 # Printing dict
 print("Dictionary time!!")
